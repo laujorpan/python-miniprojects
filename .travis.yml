@@ -9,7 +9,9 @@ addons:
   sonarcloud:
     organization: "laujorpan"
     token:
-      secure: "6b5c2a37a1af0dcc43e5f77c82fad24defeef697"
+      secure: "fc2941c5d795ecf55fe89dff1980221be7fa79b2"
+    github_token:
+      secure: "fc2941c5d795ecf55fe89dff1980221be7fa79b2"
     branches:
       - develop
       - master

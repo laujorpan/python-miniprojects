@@ -16,6 +16,8 @@ addons:
     branches:
       - develop
       - master
+    language:
+      - python
 
 script:
   sonar-scanner

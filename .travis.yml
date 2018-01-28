@@ -3,8 +3,8 @@ sudo: required
 
 language: python
 python:
-  - pip install .
-  - pip install -r requirements.txt
+  pip install .
+  pip install -r requirements.txt
 
 addons:
   sonarcloud:
@@ -12,11 +12,11 @@ addons:
     token:
       secure: "6b5c2a37a1af0dcc43e5f77c82fad24defeef697"
     branches:
-      - master
-      - develop
+      master
+      develop
 
 script:
-  - sonar-scanner
+  sonar-scanner
 cache:
   directories:
-    - '$HOME/.sonar/cache'
+    '$HOME/.sonar/cache'

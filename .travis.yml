@@ -11,8 +11,8 @@ addons:
     token:
       secure: "6b5c2a37a1af0dcc43e5f77c82fad24defeef697"
     branches:
-      master
-      develop
+      - develop
+      - master
 
 script:
   sonar-scanner

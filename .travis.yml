@@ -3,7 +3,6 @@ sudo: required
 
 language: python
 install:
-  pip install .
   pip install -r requirements.txt
 
 addons:

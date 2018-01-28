@@ -19,7 +19,7 @@ addons:
       - master
 
 script:
-  sonar-scanner
+  - sonar-scanner -X
 cache:
   directories:
     '$HOME/.sonar/cache'

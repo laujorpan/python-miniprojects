@@ -4,6 +4,6 @@ class InitialClass:
         self.attrib1=attrib1
         self.attrib2=attrib2
 
-    def print_attributes(self):
-        # type: () -> None
-        print "Attribs:",self.attrib1,self.attrib2
+    def attributes_str(self):
+        # type: () -> String
+        return "Attribs:",self.attrib1,self.attrib2

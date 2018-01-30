@@ -1,0 +1,25 @@
+dist: trusty
+sudo: required
+
+language: python
+python: "3.5"
+install:
+  pip install -r requirements.txt
+
+
+addons:
+  sonarcloud:
+    organization: "laujorpan-github"
+    token:
+      secure: $SECURE_TOKEN
+    github_token:
+      secure: $SECURE_TOKEN_GITHUB
+    branches:
+      - develop
+      - master
+
+script:
+  - sonar-scanner -X
+cache:
+  directories:
+    '$HOME/.sonar/cache'

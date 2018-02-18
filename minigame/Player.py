@@ -12,6 +12,17 @@ class Type(Enum):
     WIZARD = {'attack': 20, 'long-attack': 60, 'defense': 20, 'spell': 80}
     ARCHER = {'attack': 40, 'long-attack': 80, 'defense': 20, 'spell': 40}
 
+    @staticmethod
+    def get_possible_types():
+        print ("Possible player types:")
+        count = 1
+        player_types = {}
+        for type in Type:
+            print (count, "- " + type.name + "(" + str (type.value) + ")")
+            player_types[count] = type.name
+            count += 1
+        print ("To exit, press 0")
+        return player_types
 
 class Player:
 

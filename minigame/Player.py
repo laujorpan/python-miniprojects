@@ -6,6 +6,17 @@ class Ethnic(Enum):
     ORC = {'hp': 400, 'mp': 200}
     ELF = {'hp': 250, 'mp': 400}
 
+    @staticmethod
+    def get_possible_ethnics():
+        print ("Possible player ethnics:")
+        count = 1
+        player_ethnics = {}
+        for ethnic in Ethnic:
+            print (count, "- " + ethnic.name + "(" + str (ethnic.value) + ")")
+            player_ethnics[count] = ethnic.name
+            count += 1
+        print ("To exit, press 0")
+        return player_ethnics
 
 class Type(Enum):
     WARRIOR = {'attack': 80, 'long-attack': 40, 'defense': 30, 'spell': 30}
